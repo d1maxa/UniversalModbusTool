@@ -2,4 +2,9 @@
 # Данный GITIGNORE-файл был автоматически создан Microsoft(R) Visual Studio.
 ################################################################################
 
-/packages
+*.suo
+*.user
+_ReSharper.*
+bin
+obj
+packages

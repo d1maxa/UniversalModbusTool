@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversalModbusTool", "UniversalModbusTool\UniversalModbusTool.csproj", "{C2BC92CC-A978-438E-801F-7260C0708562}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmtExcelImport", "UmtExcelImport\UmtExcelImport.csproj", "{77C6A3D3-0D86-426F-A26B-3D4DCFFA8018}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmtData", "UmtData\UmtData.csproj", "{52B2BC1F-A27B-4127-A6B8-B02E174A581E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmtControls", "UmtControls\UmtControls.csproj", "{A6976198-0762-4015-9B46-3EC0D7786B08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModbusTester", "ModbusTester\ModbusTester.csproj", "{110E95FD-1D8F-42D5-AB9D-0C5A7878E41E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2BC92CC-A978-438E-801F-7260C0708562}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2BC92CC-A978-438E-801F-7260C0708562}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2BC92CC-A978-438E-801F-7260C0708562}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2BC92CC-A978-438E-801F-7260C0708562}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77C6A3D3-0D86-426F-A26B-3D4DCFFA8018}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77C6A3D3-0D86-426F-A26B-3D4DCFFA8018}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77C6A3D3-0D86-426F-A26B-3D4DCFFA8018}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77C6A3D3-0D86-426F-A26B-3D4DCFFA8018}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52B2BC1F-A27B-4127-A6B8-B02E174A581E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52B2BC1F-A27B-4127-A6B8-B02E174A581E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52B2BC1F-A27B-4127-A6B8-B02E174A581E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52B2BC1F-A27B-4127-A6B8-B02E174A581E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6976198-0762-4015-9B46-3EC0D7786B08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6976198-0762-4015-9B46-3EC0D7786B08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6976198-0762-4015-9B46-3EC0D7786B08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6976198-0762-4015-9B46-3EC0D7786B08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{110E95FD-1D8F-42D5-AB9D-0C5A7878E41E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{110E95FD-1D8F-42D5-AB9D-0C5A7878E41E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{110E95FD-1D8F-42D5-AB9D-0C5A7878E41E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{110E95FD-1D8F-42D5-AB9D-0C5A7878E41E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C2BC92CC-A978-438E-801F-7260C0708562}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UniversalModbusTool</RootNamespace>
+    <AssemblyName>UniversalModbusTool</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NModbus4, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Nmodbus\NModbus4.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\BaseUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ComPortList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ComPortList.Designer.cs">
+      <DependentUpon>ComPortList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ComPortEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ComPortEditor.Designer.cs">
+      <DependentUpon>ComPortEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ComPortListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ComPortListControl.Designer.cs">
+      <DependentUpon>ComPortListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\ComPortInitializer.cs" />
+    <Compile Include="Forms\GraphType.cs" />
+    <Compile Include="Core\ModbusTool.cs" />
+    <Compile Include="Forms\AddNewCompressor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddNewCompressor.Designer.cs">
+      <DependentUpon>AddNewCompressor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CompressorMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CompressorMenu.Designer.cs">
+      <DependentUpon>CompressorMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Graph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Graph.Designer.cs">
+      <DependentUpon>Graph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SearchAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SearchAddress.Designer.cs">
+      <DependentUpon>SearchAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ICompressorListControl.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Controls\CompressorItemControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CompressorItemControl.Designer.cs">
+      <DependentUpon>CompressorItemControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControllerListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ControllerListControl.Designer.cs">
+      <DependentUpon>ControllerListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SettingsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SettingsControl.Designer.cs">
+      <DependentUpon>SettingsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Controls\ComPortList.resx">
+      <DependentUpon>ComPortList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ComPortEditor.resx">
+      <DependentUpon>ComPortEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ComPortListControl.resx">
+      <DependentUpon>ComPortListControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddNewCompressor.resx">
+      <DependentUpon>AddNewCompressor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CompressorMenu.resx">
+      <DependentUpon>CompressorMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Graph.resx">
+      <DependentUpon>Graph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SearchAddress.resx">
+      <DependentUpon>SearchAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Controls\CompressorItemControl.resx">
+      <DependentUpon>CompressorItemControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ControllerListControl.resx">
+      <DependentUpon>ControllerListControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SettingsControl.resx">
+      <DependentUpon>SettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Excel\DX330.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Excel\KTS-300%28V%29.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\DataSources\UmtData.Data.CompressorData.datasource" />
+    <None Include="Properties\DataSources\UmtData.Data.Settings.CompressorSetting.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UmtControls\UmtControls.csproj">
+      <Project>{A6976198-0762-4015-9B46-3EC0D7786B08}</Project>
+      <Name>UmtControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UmtData\UmtData.csproj">
+      <Project>{52B2BC1F-A27B-4127-A6B8-B02E174A581E}</Project>
+      <Name>UmtData</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\DeleteRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1461725465_Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Models\DX330.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Models\KTS-300%28V%29.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="Resources\1464462619_cross.png" />
+    <Content Include="Resources\1464463492_hammer_screwdriver.png" />
+    <Content Include="Resources\1465258473_line_graph-b.png" />
+    <Content Include="Resources\1465258483_line_graph-g.png" />
+    <Content Include="Resources\1465334352_port.png" />
+    <Content Include="Resources\1465334414_Streamline-75.png" />
+    <Content Include="Resources\1465334538_application_view_tile.png" />
+    <Content Include="Resources\1465335963_play-green.png" />
+    <Content Include="Resources\1465336086_error.png" />
+    <Content Include="Resources\1465338733_floppy.png" />
+    <Content Include="Resources\1465344378_edit-clear.png" />
+    <Content Include="Resources\1465423419_refresh.png" />
+    <None Include="Resources\chk_checked.bmp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\chk_unchecked.bmp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

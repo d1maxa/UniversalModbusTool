@@ -1,0 +1,2362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Indexes xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>DX330</Name>
+  <CoilStatuses>
+    <CoilStatus>
+      <Address>1</Address>
+      <Function>START / STOP STATE</Function>
+      <IsReadOnly>true</IsReadOnly>
+      <SpecialFunction>Status</SpecialFunction>
+      <DataType>Digital</DataType>
+    </CoilStatus>
+    <CoilStatus>
+      <Address>2</Address>
+      <Function>ALARM RESET COMMAND</Function>
+      <IsReadOnly>false</IsReadOnly>
+      <SpecialFunction>ResetButton</SpecialFunction>
+      <DataType>Digital</DataType>
+    </CoilStatus>
+    <CoilStatus>
+      <Address>3</Address>
+      <Function>COMM. LOAD COMMAND</Function>
+      <IsReadOnly>false</IsReadOnly>
+      <SpecialFunction>NotSelected</SpecialFunction>
+      <DataType>Digital</DataType>
+    </CoilStatus>
+    <CoilStatus>
+      <Address>4</Address>
+      <Function>COMM. UNLOAD COMMAND</Function>
+      <IsReadOnly>false</IsReadOnly>
+      <SpecialFunction>NotSelected</SpecialFunction>
+      <DataType>Digital</DataType>
+    </CoilStatus>
+    <CoilStatus>
+      <Address>5</Address>
+      <Function>START COMMAND</Function>
+      <IsReadOnly>false</IsReadOnly>
+      <SpecialFunction>NotSelected</SpecialFunction>
+      <DataType>Digital</DataType>
+    </CoilStatus>
+    <CoilStatus>
+      <Address>6</Address>
+      <Function>STOP COMMAND</Function>
+      <IsReadOnly>false</IsReadOnly>
+      <SpecialFunction>NotSelected</SpecialFunction>
+      <DataType>Digital</DataType>
+    </CoilStatus>
+    <CoilStatus>
+      <Address>7</Address>
+      <Function>COMM. START COMMAND</Function>
+      <IsReadOnly>false</IsReadOnly>
+      <SpecialFunction>StartButton</SpecialFunction>
+      <DataType>Digital</DataType>
+    </CoilStatus>
+    <CoilStatus>
+      <Address>8</Address>
+      <Function>COMM. STOP COMMAND</Function>
+      <IsReadOnly>false</IsReadOnly>
+      <SpecialFunction>StopButton</SpecialFunction>
+      <DataType>Digital</DataType>
+    </CoilStatus>
+  </CoilStatuses>
+  <InputStatusGroups>
+    <IndexGroupOfInputStatus>
+      <Name>DIGITAL INPUT PORT</Name>
+      <Values>
+        <InputStatus>
+          <Address>10001</Address>
+          <Function>EMERGENCY SW FAULT SIGNAL</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10002</Address>
+          <Function>COOLING FAN FAULT SIGNAL</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10003</Address>
+          <Function>MAIN-MOTOR FAULT SIGNAL</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10004</Address>
+          <Function>REVERSE-PHASE FAULT SIGNAL</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10006</Address>
+          <Function>OIL FILTER DP ALARM SIGNAL</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10007</Address>
+          <Function>AIR FILTER DP ALARM SIGNAL</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10008</Address>
+          <Function>OIL RECLAIMER DP ALARM SIGNAL</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10009</Address>
+          <Function>REMOTE LOAD/UNLOAD SIGNAL</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10010</Address>
+          <Function>REMOTE RUN/STOP SIGNAL</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+      </Values>
+    </IndexGroupOfInputStatus>
+    <IndexGroupOfInputStatus>
+      <Name>DIGITAL OUTPUT PORT</Name>
+      <Values>
+        <InputStatus>
+          <Address>10017</Address>
+          <Function>INVERTER ON/OFF</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10020</Address>
+          <Function>LOAD/UNLOAD SOL. V/V ON/OFF</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10021</Address>
+          <Function>MAIN M/C ON/OFF</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10022</Address>
+          <Function>STAR M/C ON/OFF</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10023</Address>
+          <Function>DELTA M/C ON/OFF</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10025</Address>
+          <Function>MULTI FUNCTION OUTPUT N9</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10026</Address>
+          <Function>MULTI FUNCTION OUTPUT N10</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10027</Address>
+          <Function>MULTI FUNCTION OUTPUT N11</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10028</Address>
+          <Function>MULTI FUNCTION OUTPUT N12</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+      </Values>
+    </IndexGroupOfInputStatus>
+    <IndexGroupOfInputStatus>
+      <Name>FAULT STATE</Name>
+      <Values>
+        <InputStatus>
+          <Address>10033</Address>
+          <Function>System Fault</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10034</Address>
+          <Function>Emergency Stop</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10035</Address>
+          <Function>Fan Motor O.L</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10036</Address>
+          <Function>Main Motor O.L</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10037</Address>
+          <Function>Reverse Phase</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10038</Address>
+          <Function>Discharge Press.High</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10039</Address>
+          <Function>Discharge Temp. High</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10040</Address>
+          <Function>Oil Reclaimer Press. High</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10041</Address>
+          <Function>Oil Reclaimer Temp. High</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10042</Address>
+          <Function>Diff.Press. High</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10043</Address>
+          <Function>Brow-down Time Over</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10044</Address>
+          <Function>Discharge Press Sensor</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10045</Address>
+          <Function>Discharge Temp Sensor</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10046</Address>
+          <Function>Oil P-Sensor Fault</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10047</Address>
+          <Function>Oil T-Sensor Fault</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10048</Address>
+          <Function>Ambient T-Sensor</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+      </Values>
+    </IndexGroupOfInputStatus>
+    <IndexGroupOfInputStatus>
+      <Name>ALARM STATE</Name>
+      <Values>
+        <InputStatus>
+          <Address>10049</Address>
+          <Function>Oil Filter Diff. Press.</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10050</Address>
+          <Function>Air Filter Diff. Press.</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10051</Address>
+          <Function>Oil Reclaimer Diff.Press.</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10052</Address>
+          <Function>Discharge Press. High</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10053</Address>
+          <Function>Discharge Temp. High</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10054</Address>
+          <Function>Oil Reclaimer Press. High</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10055</Address>
+          <Function>Oil Reclaimer Temp. High</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10056</Address>
+          <Function>Differential Press</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10057</Address>
+          <Function>Ambient Temp. High</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10059</Address>
+          <Function>Dust Filter Cleaning</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10060</Address>
+          <Function>Suction Filter Change</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10061</Address>
+          <Function>Oil Filter Change</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10062</Address>
+          <Function>Lub.Oil Change</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10063</Address>
+          <Function>Cooler Cleaning</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10064</Address>
+          <Function>Overhaul</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+      </Values>
+    </IndexGroupOfInputStatus>
+    <IndexGroupOfInputStatus>
+      <Name>START INHIBIT STATE</Name>
+      <Values>
+        <InputStatus>
+          <Address>10065</Address>
+          <Function>Discharge Temp. Low</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+        <InputStatus>
+          <Address>10066</Address>
+          <Function>Oil Reclaimer Press High</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Digital</DataType>
+        </InputStatus>
+      </Values>
+    </IndexGroupOfInputStatus>
+  </InputStatusGroups>
+  <InputRegisterGroups>
+    <IndexGroupOfInputRegister>
+      <Name>STATUS</Name>
+      <Values>
+        <InputRegister>
+          <Address>30001</Address>
+          <Function>Digital Input Port</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30002</Address>
+          <Function>Digital Output Port</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30003</Address>
+          <Function>Fault Data</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30004</Address>
+          <Function>Alarm Data</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30005</Address>
+          <Function>Starting Inhibit Alarm Data</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30006</Address>
+          <Function>Inside ADC Channel 1</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min>0</Min>
+          <Max>1023</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30007</Address>
+          <Function>Inside ADC Channel 2</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min>0</Min>
+          <Max>1023</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30008</Address>
+          <Function>Inside ADC Channel 3</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min>0</Min>
+          <Max>1023</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30009</Address>
+          <Function>Inside ADC Channel 4</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min>0</Min>
+          <Max>1023</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30010</Address>
+          <Function>Inside ADC Channel 5</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Float</DataType>
+          <Units />
+          <Min>0</Min>
+          <Max>1023</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30013</Address>
+          <Function>Differential Press</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>bar</Units>
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>10</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30017</Address>
+          <Function>Discharge Press</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>Pressure</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>bar</Units>
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>10</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30018</Address>
+          <Function>Inside Oil Press</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>Bar</Units>
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>10</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30019</Address>
+          <Function>Discharge Temp</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>Temperature</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>°C</Units>
+          <Min>-20.0</Min>
+          <Max>200.0</Max>
+          <Multiplier>10</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30020</Address>
+          <Function>Inside Oil Temp</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>°C</Units>
+          <Min>-20.0</Min>
+          <Max>200.0</Max>
+          <Multiplier>10</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30021</Address>
+          <Function>Ambient Temp</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>°C</Units>
+          <Min>-10.0</Min>
+          <Max>100.0</Max>
+          <Multiplier>10</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30024</Address>
+          <Function>Equipment State No1</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min>0</Min>
+          <Max>16</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30027</Address>
+          <Function>RPM Command</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>Rpm</Units>
+          <Min>0</Min>
+          <Max>9990</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30030</Address>
+          <Function>RPM Command</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>%</Units>
+          <Min>0.0</Min>
+          <Max>100.0</Max>
+          <Multiplier>10</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30033</Address>
+          <Function>Keypad Input Data</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30034</Address>
+          <Function>Equipment State No.2</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min>0</Min>
+          <Max>99</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30036</Address>
+          <Function>Inverter Command Frequency</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>Hz</Units>
+          <Min>0.0</Min>
+          <Max>120.0</Max>
+          <Multiplier>10</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+      </Values>
+    </IndexGroupOfInputRegister>
+  </InputRegisterGroups>
+  <HoldRegisterGroups>
+    <IndexGroupOfHoldRegister>
+      <Name>OPERATION</Name>
+      <Values>
+        <HoldRegister>
+          <Address>40021</Address>
+          <Function>Unload Pressure</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>bar</Units>
+          <Min>4.0</Min>
+          <Max>70.0</Max>
+          <Multiplier>10</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40022</Address>
+          <Function>Load Pressure</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>bar</Units>
+          <Min>3.8</Min>
+          <Max>65.0</Max>
+          <Multiplier>10</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40023</Address>
+          <Function>Auto-Stop Delay Time</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>S</Units>
+          <Min>1</Min>
+          <Max>3600</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40024</Address>
+          <Function>Stop Delay Time</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>S</Units>
+          <Min>1</Min>
+          <Max>60</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40025</Address>
+          <Function>Blowdown Delay Time</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>S</Units>
+          <Min>1</Min>
+          <Max>600</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40026</Address>
+          <Function>Drain Time (ON)</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>S</Units>
+          <Min>1</Min>
+          <Max>30</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40027</Address>
+          <Function>Drain Interval</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>S</Units>
+          <Min>1</Min>
+          <Max>3600</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40028</Address>
+          <Function>Cooling Fan Run Temp</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>°C</Units>
+          <Min>0</Min>
+          <Max>200</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40029</Address>
+          <Function>Cooling Fan Stop Temp</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>°C</Units>
+          <Min>0</Min>
+          <Max>200</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+      </Values>
+    </IndexGroupOfHoldRegister>
+    <IndexGroupOfHoldRegister>
+      <Name>SCHEDULE</Name>
+      <Values>
+        <HoldRegister>
+          <Address>40041</Address>
+          <Function>SUN- Starting Time</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40042</Address>
+          <Function>MON- Starting Time</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40043</Address>
+          <Function>TUE- Starting Time</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40044</Address>
+          <Function>WED- Starting Time</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40045</Address>
+          <Function>THU- Starting Time</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40046</Address>
+          <Function>FRI- Starting Time</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40047</Address>
+          <Function>SAT- Starting Time</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40061</Address>
+          <Function>SUN- END Time</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40062</Address>
+          <Function>MON- END Time</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40063</Address>
+          <Function>TUE- END Time</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40064</Address>
+          <Function>WED- END Time</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40065</Address>
+          <Function>THU- END Time</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40066</Address>
+          <Function>FRI- END Time</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40067</Address>
+          <Function>SAT- END Time</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+      </Values>
+    </IndexGroupOfHoldRegister>
+    <IndexGroupOfHoldRegister>
+      <Name>MAINTENANCE</Name>
+      <Values>
+        <HoldRegister>
+          <Address>40081</Address>
+          <Function>DUST Filter Cleaning Cycle</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>H</Units>
+          <Min>0</Min>
+          <Max>32000</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40082</Address>
+          <Function>Suction Filter change Cycle</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>H</Units>
+          <Min>0</Min>
+          <Max>32000</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40083</Address>
+          <Function>Oil Filter Change Cycle</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>H</Units>
+          <Min>0</Min>
+          <Max>32000</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40084</Address>
+          <Function>Lub. Oil Change Cycle</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>H</Units>
+          <Min>0</Min>
+          <Max>32000</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40085</Address>
+          <Function>Cooler Cleaning Cycle</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>H</Units>
+          <Min>0</Min>
+          <Max>32000</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40086</Address>
+          <Function>Overhaul Cycle</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>H</Units>
+          <Min>0</Min>
+          <Max>32000</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40091</Address>
+          <Function>After DUST Filter Cleaning, lapse</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>H</Units>
+          <Min>0</Min>
+          <Max>32000</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40092</Address>
+          <Function>After Suction Filter change, elapsed time</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>H</Units>
+          <Min>0</Min>
+          <Max>32000</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40093</Address>
+          <Function>After Oil Filter Change, elapsed time</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>H</Units>
+          <Min>0</Min>
+          <Max>32000</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40094</Address>
+          <Function>After Lub. Oil Change, elapsed time</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>H</Units>
+          <Min>0</Min>
+          <Max>32000</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40095</Address>
+          <Function>After Cooler Cleaning, elapsed time</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>H</Units>
+          <Min>0</Min>
+          <Max>32000</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40096</Address>
+          <Function>After Overhaul, elapsed time</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>H</Units>
+          <Min>0</Min>
+          <Max>32000</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+      </Values>
+    </IndexGroupOfHoldRegister>
+    <IndexGroupOfHoldRegister>
+      <Name>SHUTDOWN</Name>
+      <Values>
+        <HoldRegister>
+          <Address>40101</Address>
+          <Function>Discharge Temp. High</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>°C</Units>
+          <Min>80</Min>
+          <Max>130</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40102</Address>
+          <Function>Discharge Press. High</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>bar</Units>
+          <Min>1.2</Min>
+          <Max>100.0</Max>
+          <Multiplier>10</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40103</Address>
+          <Function>Oil Reclaimer Temp High</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>°C</Units>
+          <Min>80</Min>
+          <Max>130</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40104</Address>
+          <Function>Oil Reclaimer Press High</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>bar</Units>
+          <Min>1.2</Min>
+          <Max>100.0</Max>
+          <Multiplier>10</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40105</Address>
+          <Function>Diff Press High</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>bar</Units>
+          <Min>0.4</Min>
+          <Max>5.0</Max>
+          <Multiplier>10</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+      </Values>
+    </IndexGroupOfHoldRegister>
+    <IndexGroupOfHoldRegister>
+      <Name>ALARM MODE</Name>
+      <Values>
+        <HoldRegister>
+          <Address>40121</Address>
+          <Function>Discharge Temp. High</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>°C</Units>
+          <Min>80</Min>
+          <Max>130</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40122</Address>
+          <Function>Discharge Press.High</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>bar</Units>
+          <Min>1.2</Min>
+          <Max>100.0</Max>
+          <Multiplier>10</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40123</Address>
+          <Function>Oil Reclaimer Temp. High</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>°C</Units>
+          <Min>80</Min>
+          <Max>130</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40124</Address>
+          <Function>Oil Reclaimer Press. High</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>bar</Units>
+          <Min>1.2</Min>
+          <Max>100.0</Max>
+          <Multiplier>10</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40125</Address>
+          <Function>Diff Press High</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>bar</Units>
+          <Min>0.4</Min>
+          <Max>5.0</Max>
+          <Multiplier>10</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40126</Address>
+          <Function>Ambient Temp. High</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>°C</Units>
+          <Min>35</Min>
+          <Max>60</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+      </Values>
+    </IndexGroupOfHoldRegister>
+    <IndexGroupOfHoldRegister>
+      <Name>START INHIBIT</Name>
+      <Values>
+        <HoldRegister>
+          <Address>40141</Address>
+          <Function>Discharge Temp. Low</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>°C</Units>
+          <Min>-10</Min>
+          <Max>10</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40142</Address>
+          <Function>Oil Reclaimer Press. High</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>Bar</Units>
+          <Min>0.1</Min>
+          <Max>5.0</Max>
+          <Multiplier>10</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+      </Values>
+    </IndexGroupOfHoldRegister>
+    <IndexGroupOfHoldRegister>
+      <Name>COMPRESSOR</Name>
+      <Values>
+        <HoldRegister>
+          <Address>40161</Address>
+          <Function>Y-DELTA Transfer Time</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>sec</Units>
+          <Min>0.1</Min>
+          <Max>30.0</Max>
+          <Multiplier>10</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40162</Address>
+          <Function>Load Delay Time</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>sec</Units>
+          <Min>5</Min>
+          <Max>300</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40163</Address>
+          <Function>Reload Delay Time</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>sec</Units>
+          <Min>5</Min>
+          <Max>300</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40164</Address>
+          <Function>Diff. Press Detect Delay</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>sec</Units>
+          <Min>1</Min>
+          <Max>600</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40165</Address>
+          <Function>Load Command Mode</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>2</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40166</Address>
+          <Function>Starting Command Mode</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>3</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40167</Address>
+          <Function>Power Return Restart</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>5</CustomType>
+        </HoldRegister>
+      </Values>
+    </IndexGroupOfHoldRegister>
+    <IndexGroupOfHoldRegister>
+      <Name>VSD MODE</Name>
+      <Values>
+        <HoldRegister>
+          <Address>40181</Address>
+          <Function>VSD Control Mode</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>4</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40182</Address>
+          <Function>Maximum Speed</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>rpm</Units>
+          <Min>0</Min>
+          <Max>9990</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40183</Address>
+          <Function>Minimum Speed</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>rpm</Units>
+          <Min>0</Min>
+          <Max>9990</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40184</Address>
+          <Function>Optimum Speed</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>rpm</Units>
+          <Min>0</Min>
+          <Max>9990</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40185</Address>
+          <Function>Unloaded Speed</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>rpm</Units>
+          <Min>0</Min>
+          <Max>9990</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40186</Address>
+          <Function>Speed Command(Hz)</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>rpm</Units>
+          <Min>0</Min>
+          <Max>9990</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40187</Address>
+          <Function>Speed Command(mA)</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>mA</Units>
+          <Min>4.0</Min>
+          <Max>20.0</Max>
+          <Multiplier>10</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40188</Address>
+          <Function>Proportional Band (P)</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>%</Units>
+          <Min>0.0</Min>
+          <Max>99.9</Max>
+          <Multiplier>10</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40189</Address>
+          <Function>Intergral Time (I)</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>초</Units>
+          <Min>0</Min>
+          <Max>3600</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40190</Address>
+          <Function>Dead Band (DBand)</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>%</Units>
+          <Min>0</Min>
+          <Max>20.0</Max>
+          <Multiplier>10</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40191</Address>
+          <Function>Jerk Control Ratio</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>%</Units>
+          <Min>0.1</Min>
+          <Max>99.9</Max>
+          <Multiplier>10</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40192</Address>
+          <Function>Max Inverter RPM</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>%</Units>
+          <Min>0</Min>
+          <Max>9990</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40193</Address>
+          <Function>Max Inverter Frequency</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>Hz</Units>
+          <Min>0</Min>
+          <Max>120</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+      </Values>
+    </IndexGroupOfHoldRegister>
+    <IndexGroupOfHoldRegister>
+      <Name>CONFIGURE</Name>
+      <Values>
+        <HoldRegister>
+          <Address>40224</Address>
+          <Function>Ambient Temp. Sensor Use</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>5</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40225</Address>
+          <Function>Oil Reclaimer Press. Use</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>5</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40226</Address>
+          <Function>Oil Reclaimer Temp. Use</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>5</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40227</Address>
+          <Function>Discharge Press. Correction</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>bar</Units>
+          <Min>-10.0</Min>
+          <Max>10.0</Max>
+          <Multiplier>10</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40228</Address>
+          <Function>Oil Press. Correction</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>bar</Units>
+          <Min>-10.0</Min>
+          <Max>10.0</Max>
+          <Multiplier>10</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40229</Address>
+          <Function>Ambient Temp. Correction</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>°C</Units>
+          <Min>-10.0</Min>
+          <Max>10.0</Max>
+          <Multiplier>10</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40230</Address>
+          <Function>Discharge Temp. Correction</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>°C</Units>
+          <Min>-10.0</Min>
+          <Max>10.0</Max>
+          <Multiplier>10</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40231</Address>
+          <Function>Oil Temp. Correction</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>°C</Units>
+          <Min>-10.0</Min>
+          <Max>10.0</Max>
+          <Multiplier>10</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40232</Address>
+          <Function>Discharge Press. Low</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>bar</Units>
+          <Min>-10</Min>
+          <Max>120</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40233</Address>
+          <Function>Discharge Press. High</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>bar</Units>
+          <Min>-10</Min>
+          <Max>120</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40234</Address>
+          <Function>Min. Oil Press</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>bar</Units>
+          <Min>-10</Min>
+          <Max>120</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40235</Address>
+          <Function>Max. Oil Press</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>bar</Units>
+          <Min>-10</Min>
+          <Max>120</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40236</Address>
+          <Function>Multi Function N9</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40237</Address>
+          <Function>Multi Function N10</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40238</Address>
+          <Function>Multi Function N11</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40239</Address>
+          <Function>Multi Function N12</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+      </Values>
+    </IndexGroupOfHoldRegister>
+    <IndexGroupOfHoldRegister>
+      <Name>DIAGNOSTIC</Name>
+      <Values>
+        <HoldRegister>
+          <Address>40241</Address>
+          <Function>Self Test</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>5</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>30006</Address>
+          <Function>B1 Input</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min>0</Min>
+          <Max>1023</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>30007</Address>
+          <Function>B2 Input</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min>0</Min>
+          <Max>1023</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>30008</Address>
+          <Function>B3 Input</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min>0</Min>
+          <Max>1023</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>30009</Address>
+          <Function>B4 Input</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min>0</Min>
+          <Max>1023</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>30010</Address>
+          <Function>B5 Input</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min>0</Min>
+          <Max>1023</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40247</Address>
+          <Function>B4 4 mA</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min>0</Min>
+          <Max>1023</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40248</Address>
+          <Function>B4 20mA</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min>0</Min>
+          <Max>1023</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40249</Address>
+          <Function>B5 4mA</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min>0</Min>
+          <Max>1023</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40250</Address>
+          <Function>B5 20mA</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min>0</Min>
+          <Max>1023</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40251</Address>
+          <Function>Y1 4mA</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min>0</Min>
+          <Max>1023</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40252</Address>
+          <Function>Y1 20mA</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min>0</Min>
+          <Max>1023</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40253</Address>
+          <Function>Y2 4mA</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min>0</Min>
+          <Max>1023</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40254</Address>
+          <Function>Y2 20mA</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min>0</Min>
+          <Max>1023</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40255</Address>
+          <Function>Y3 4mA</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min>0</Min>
+          <Max>1023</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40256</Address>
+          <Function>Y4 20mA</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min>0</Min>
+          <Max>1023</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40257</Address>
+          <Function>ADC F/T</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min>1</Min>
+          <Max>256</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40258</Address>
+          <Function>DAC F/T</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min>1</Min>
+          <Max>256</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+      </Values>
+    </IndexGroupOfHoldRegister>
+    <IndexGroupOfHoldRegister>
+      <Name>OPERATION INFORMATION</Name>
+      <Values>
+        <HoldRegister>
+          <Address>40261</Address>
+          <Function>Total Run Hours</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int32</DataType>
+          <Units>H</Units>
+          <Min>0</Min>
+          <Max>99999</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40263</Address>
+          <Function>Motor Run Hours</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int32</DataType>
+          <Units>H</Units>
+          <Min>0</Min>
+          <Max>99999</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40265</Address>
+          <Function>Motor On/Off Times</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int32</DataType>
+          <Units>T</Units>
+          <Min>0</Min>
+          <Max>99999</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40267</Address>
+          <Function>Loaded Hours</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int32</DataType>
+          <Units>H</Units>
+          <Min>0</Min>
+          <Max>99999</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40269</Address>
+          <Function>Loaded On/Off Times</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int32</DataType>
+          <Units>T</Units>
+          <Min>0</Min>
+          <Max>99999</Max>
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+      </Values>
+    </IndexGroupOfHoldRegister>
+    <IndexGroupOfHoldRegister>
+      <Name>ADDITION FUNCTION</Name>
+      <Values>
+        <HoldRegister>
+          <Address>40281</Address>
+          <Function>COMM. LOAD REQUEST</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>5</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40282</Address>
+          <Function>COMM. UNLOAD REQUEST</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>5</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40283</Address>
+          <Function>COMM. START REQUEST</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>5</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40284</Address>
+          <Function>COMM. STOP REQUEST</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>5</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40285</Address>
+          <Function>COMM. Y1 OUTPUT MODE</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>1</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40286</Address>
+          <Function>COMM. Y2 OUTPUT MODE</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>1</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40287</Address>
+          <Function>COMM. Y3 OUTPUT MODE</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>1</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40288</Address>
+          <Function>COMM. Y1 OUTPUT</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min>0.0</Min>
+          <Max>100.0</Max>
+          <Multiplier>10</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40289</Address>
+          <Function>COMM. Y2 OUTPUT</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min>0.0</Min>
+          <Max>100.0</Max>
+          <Multiplier>10</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+        <HoldRegister>
+          <Address>40290</Address>
+          <Function>COMM. Y3 OUTPUT</Function>
+          <IsReadOnly>false</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min>0.0</Min>
+          <Max>100.0</Max>
+          <Multiplier>10</Multiplier>
+          <CustomType>0</CustomType>
+        </HoldRegister>
+      </Values>
+    </IndexGroupOfHoldRegister>
+  </HoldRegisterGroups>
+  <CustomTypes>
+    <CustomType>
+      <BaseId>7</BaseId>
+      <Id>0</Id>
+      <Name>(не выбран)</Name>
+      <Values />
+    </CustomType>
+    <CustomType>
+      <BaseId>7</BaseId>
+      <Id>1</Id>
+      <Name>Comm Y Output Mode</Name>
+      <Values>
+        <CustomValue>
+          <Value>0</Value>
+          <Description>LOCAL</Description>
+        </CustomValue>
+        <CustomValue>
+          <Value>1</Value>
+          <Description>4mA</Description>
+        </CustomValue>
+        <CustomValue>
+          <Value>2</Value>
+          <Description>20mA</Description>
+        </CustomValue>
+        <CustomValue>
+          <Value>3</Value>
+          <Description>COMM DATA</Description>
+        </CustomValue>
+      </Values>
+    </CustomType>
+    <CustomType>
+      <BaseId>7</BaseId>
+      <Id>2</Id>
+      <Name>Load Command Mode</Name>
+      <Values>
+        <CustomValue>
+          <Value>0</Value>
+          <Description>Local</Description>
+        </CustomValue>
+        <CustomValue>
+          <Value>1</Value>
+          <Description>Network</Description>
+        </CustomValue>
+        <CustomValue>
+          <Value>2</Value>
+          <Description>Remote</Description>
+        </CustomValue>
+      </Values>
+    </CustomType>
+    <CustomType>
+      <BaseId>7</BaseId>
+      <Id>3</Id>
+      <Name>Starting Command Mode</Name>
+      <Values>
+        <CustomValue>
+          <Value>0</Value>
+          <Description>Local</Description>
+        </CustomValue>
+        <CustomValue>
+          <Value>1</Value>
+          <Description>Network</Description>
+        </CustomValue>
+        <CustomValue>
+          <Value>2</Value>
+          <Description>Remote</Description>
+        </CustomValue>
+        <CustomValue>
+          <Value>3</Value>
+          <Description>Schedule</Description>
+        </CustomValue>
+      </Values>
+    </CustomType>
+    <CustomType>
+      <BaseId>7</BaseId>
+      <Id>4</Id>
+      <Name>VSD Control Mode</Name>
+      <Values>
+        <CustomValue>
+          <Value>0</Value>
+          <Description>OFF</Description>
+        </CustomValue>
+        <CustomValue>
+          <Value>1</Value>
+          <Description>FIX</Description>
+        </CustomValue>
+        <CustomValue>
+          <Value>2</Value>
+          <Description>VSD</Description>
+        </CustomValue>
+      </Values>
+    </CustomType>
+    <CustomType>
+      <BaseId>7</BaseId>
+      <Id>5</Id>
+      <Name>Off/On</Name>
+      <Values>
+        <CustomValue>
+          <Value>0</Value>
+          <Description>OFF</Description>
+        </CustomValue>
+        <CustomValue>
+          <Value>1</Value>
+          <Description>ON</Description>
+        </CustomValue>
+      </Values>
+    </CustomType>
+  </CustomTypes>
+  <SpecialFunctions>
+    <SpecialFunctionIndex>
+      <SpecialFunction>Status</SpecialFunction>
+      <Index xsi:type="CoilStatus">
+        <Address>1</Address>
+        <Function>START / STOP STATE</Function>
+        <IsReadOnly>true</IsReadOnly>
+        <SpecialFunction>Status</SpecialFunction>
+        <DataType>Digital</DataType>
+      </Index>
+    </SpecialFunctionIndex>
+    <SpecialFunctionIndex>
+      <SpecialFunction>Pressure</SpecialFunction>
+      <Index xsi:type="InputRegister">
+        <Address>30017</Address>
+        <Function>Discharge Press</Function>
+        <IsReadOnly>true</IsReadOnly>
+        <SpecialFunction>Pressure</SpecialFunction>
+        <DataType>Int16</DataType>
+        <Units>bar</Units>
+        <Min xsi:nil="true" />
+        <Max xsi:nil="true" />
+        <Multiplier>10</Multiplier>
+        <CustomType>0</CustomType>
+      </Index>
+    </SpecialFunctionIndex>
+    <SpecialFunctionIndex>
+      <SpecialFunction>Temperature</SpecialFunction>
+      <Index xsi:type="InputRegister">
+        <Address>30019</Address>
+        <Function>Discharge Temp</Function>
+        <IsReadOnly>true</IsReadOnly>
+        <SpecialFunction>Temperature</SpecialFunction>
+        <DataType>Int16</DataType>
+        <Units>°C</Units>
+        <Min>-20.0</Min>
+        <Max>200.0</Max>
+        <Multiplier>10</Multiplier>
+        <CustomType>0</CustomType>
+      </Index>
+    </SpecialFunctionIndex>
+    <SpecialFunctionIndex>
+      <SpecialFunction>StartButton</SpecialFunction>
+      <Index xsi:type="CoilStatus">
+        <Address>7</Address>
+        <Function>COMM. START COMMAND</Function>
+        <IsReadOnly>false</IsReadOnly>
+        <SpecialFunction>StartButton</SpecialFunction>
+        <DataType>Digital</DataType>
+      </Index>
+    </SpecialFunctionIndex>
+    <SpecialFunctionIndex>
+      <SpecialFunction>StopButton</SpecialFunction>
+      <Index xsi:type="CoilStatus">
+        <Address>8</Address>
+        <Function>COMM. STOP COMMAND</Function>
+        <IsReadOnly>false</IsReadOnly>
+        <SpecialFunction>StopButton</SpecialFunction>
+        <DataType>Digital</DataType>
+      </Index>
+    </SpecialFunctionIndex>
+    <SpecialFunctionIndex>
+      <SpecialFunction>ResetButton</SpecialFunction>
+      <Index xsi:type="CoilStatus">
+        <Address>2</Address>
+        <Function>ALARM RESET COMMAND</Function>
+        <IsReadOnly>false</IsReadOnly>
+        <SpecialFunction>ResetButton</SpecialFunction>
+        <DataType>Digital</DataType>
+      </Index>
+    </SpecialFunctionIndex>
+  </SpecialFunctions>
+</Indexes>

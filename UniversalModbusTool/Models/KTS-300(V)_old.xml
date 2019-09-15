@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Indexes xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>KTS-300(V)</Name>
+  <CoilStatuses>
+    <CoilStatus>
+      <Address>1</Address>
+      <Function>Start / Stop Command</Function>
+      <IsReadOnly>false</IsReadOnly>
+      <SpecialFunction>StartButton StopButton0</SpecialFunction>
+      <DataType>Digital</DataType>
+    </CoilStatus>
+  </CoilStatuses>
+  <InputStatusGroups />
+  <InputRegisterGroups>
+    <IndexGroupOfInputRegister>
+      <Name>OPERATION STATUS</Name>
+      <Values>
+        <InputRegister>
+          <Address>30001</Address>
+          <Function>Address Data</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int8</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30002</Address>
+          <Function>Operation Status</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>Status</SpecialFunction>
+          <DataType>Int8</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30003</Address>
+          <Function>Fault Data</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30004</Address>
+          <Function>Comp. Data</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30005</Address>
+          <Function>Delivery Pressure</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>Pressure</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>bar</Units>
+          <Min>0</Min>
+          <Max>16.0</Max>
+          <Multiplier>10</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30006</Address>
+          <Function>Delivery Temperature</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>Temperature</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units>°C</Units>
+          <Min>-50.0</Min>
+          <Max>250.0</Max>
+          <Multiplier>10</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30007</Address>
+          <Function>Temp. Spare 1</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30008</Address>
+          <Function>Temp. Spare 2</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30009</Address>
+          <Function>Temp. Spare 3</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30010</Address>
+          <Function>Temp. Spare 4</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30013</Address>
+          <Function>Temp. Spare 5</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30017</Address>
+          <Function>Temp. Spare 6</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30018</Address>
+          <Function>Temp. Spare 7</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30019</Address>
+          <Function>Temp. Spare 8</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30020</Address>
+          <Function>Temp. Spare 9</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30021</Address>
+          <Function>Temp. Spare 10</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30024</Address>
+          <Function>Temp. Spare 11</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+        <InputRegister>
+          <Address>30027</Address>
+          <Function>Temp. Spare 12</Function>
+          <IsReadOnly>true</IsReadOnly>
+          <SpecialFunction>NotSelected</SpecialFunction>
+          <DataType>Int16</DataType>
+          <Units />
+          <Min xsi:nil="true" />
+          <Max xsi:nil="true" />
+          <Multiplier>1</Multiplier>
+          <CustomType>0</CustomType>
+        </InputRegister>
+      </Values>
+    </IndexGroupOfInputRegister>
+  </InputRegisterGroups>
+  <HoldRegisterGroups />
+  <CustomTypes>
+    <CustomType>
+      <BaseId>2</BaseId>
+      <Id>0</Id>
+      <Name>(не выбран)</Name>
+      <Values />
+    </CustomType>
+  </CustomTypes>
+  <SpecialFunctions>
+    <SpecialFunctionIndex>
+      <SpecialFunction>Status</SpecialFunction>
+      <Index xsi:type="InputRegister">
+        <Address>30002</Address>
+        <Function>Operation Status</Function>
+        <IsReadOnly>true</IsReadOnly>
+        <SpecialFunction>Status</SpecialFunction>
+        <DataType>Int8</DataType>
+        <Units />
+        <Min xsi:nil="true" />
+        <Max xsi:nil="true" />
+        <Multiplier>1</Multiplier>
+        <CustomType>0</CustomType>
+      </Index>
+    </SpecialFunctionIndex>
+    <SpecialFunctionIndex>
+      <SpecialFunction>Pressure</SpecialFunction>
+      <Index xsi:type="InputRegister">
+        <Address>30005</Address>
+        <Function>Delivery Pressure</Function>
+        <IsReadOnly>true</IsReadOnly>
+        <SpecialFunction>Pressure</SpecialFunction>
+        <DataType>Int16</DataType>
+        <Units>bar</Units>
+        <Min>0</Min>
+        <Max>16.0</Max>
+        <Multiplier>10</Multiplier>
+        <CustomType>0</CustomType>
+      </Index>
+    </SpecialFunctionIndex>
+    <SpecialFunctionIndex>
+      <SpecialFunction>Temperature</SpecialFunction>
+      <Index xsi:type="InputRegister">
+        <Address>30006</Address>
+        <Function>Delivery Temperature</Function>
+        <IsReadOnly>true</IsReadOnly>
+        <SpecialFunction>Temperature</SpecialFunction>
+        <DataType>Int16</DataType>
+        <Units>°C</Units>
+        <Min>-50.0</Min>
+        <Max>250.0</Max>
+        <Multiplier>10</Multiplier>
+        <CustomType>0</CustomType>
+      </Index>
+    </SpecialFunctionIndex>
+    <SpecialFunctionIndex>
+      <SpecialFunction>StartButton</SpecialFunction>
+      <Index xsi:type="CoilStatus">
+        <Address>1</Address>
+        <Function>Start / Stop Command</Function>
+        <IsReadOnly>false</IsReadOnly>
+        <SpecialFunction>StartButton StopButton0</SpecialFunction>
+        <DataType>Digital</DataType>
+      </Index>
+    </SpecialFunctionIndex>
+    <SpecialFunctionIndex>
+      <SpecialFunction>StopButton0</SpecialFunction>
+      <Index xsi:type="CoilStatus">
+        <Address>1</Address>
+        <Function>Start / Stop Command</Function>
+        <IsReadOnly>false</IsReadOnly>
+        <SpecialFunction>StartButton StopButton0</SpecialFunction>
+        <DataType>Digital</DataType>
+      </Index>
+    </SpecialFunctionIndex>
+  </SpecialFunctions>
+</Indexes>
